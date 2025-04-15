@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create your first account!"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:hint="full name"
+        android:background="@drawable/edit_text_bg"
+        android:padding="12dp"
+        android:layout_marginTop="24dp"
+        android:inputType="textPersonName"
+        android:layout_gravity="center" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:hint="email"
+        android:background="@drawable/edit_text_bg"
+        android:padding="12dp"
+        android:layout_marginTop="24dp"
+        android:inputType="textEmailAddress"
+        android:layout_gravity="center" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:background="@drawable/edit_text_bg"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"
+        android:inputType="textPassword"
+        android:layout_gravity="center" />
+
+    <EditText
+        android:id="@+id/repassword"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:hint="re-password"
+        android:background="@drawable/edit_text_bg"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"
+        android:inputType="textPassword"
+        android:layout_gravity="center" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="login"
+        android:textAllCaps="true"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="#2196F3"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"
+        android:background="@drawable/edit_text_bg"
+        />
+
+    <TextView
+        android:id="@+id/signup_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Already have account? Sign Up"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
+        />
+
+
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- ScrollView agar isi bisa scroll -->
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/home_indicator">
+
+
+        </ScrollView>
+
+        <!-- Home Indicator nempel di bawah -->
+        <ImageView
+            android:id="@+id/home_indicator"
+            android:layout_width="200dp"
+            android:layout_height="6dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/ic_baseline_logo" />
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
